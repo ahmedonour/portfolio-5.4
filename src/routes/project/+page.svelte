@@ -6,12 +6,12 @@
 	<ProjectCard 
 	srcPath='/Mouckup/MAM-mouckup.jpg'
 	projectTitle='M.A.M' 
-	projectPargraph='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, iure enim eum error, itaque unde minus expedita quia sunt ratione aspernatur. Ipsam odio illo labore sed est saepe, provident at.' 
+	projectPargraph='A project for a freind' 
 	/>
 	<ProjectCard 
 	srcPath='/Mouckup/Roshan.jpg'
 	projectTitle='Roshan' 
-	projectPargraph='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, iure enim eum error, itaque unde minus expedita quia sunt ratione aspernatur. Ipsam odio illo labore sed est saepe, provident at.' 
+	projectPargraph='a Real Estat website for selling and buying propytes' 
 	/>
 </main>
 
