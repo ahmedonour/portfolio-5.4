@@ -94,7 +94,7 @@
     }
     nav h1{
         font-family: 'Plaster';
-        font-size: 3rem;
+        font-size: 4rem;
         color: white;
     }
     ol .link-wrapper .fa-times{
