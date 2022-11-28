@@ -2,7 +2,8 @@
 </script>
 
 <div class="heroCircle ">
-  <div class="circle cricleColor animate__animated animate__heartBeat animate__infinite" />
+  <div class="circle animate__animated animate__heartBeat animate__infinite" />
+  <!-- <h1 class="haert animate__animated animate__heartBeat animate__infinite">🖤</h1> -->
   <div class="circleShadow" />
 </div>
 
@@ -21,8 +22,9 @@
   .circle {
     width: 21rem;
     height: 21rem;
+    font-size: 20vw;
     border-radius: 400px;
-    background-color: #260090;
+    background-color: #260090; 
     box-shadow: inset 0px 15px 22px rgba(255, 255, 255, 0.51),
       inset 0px -21px 39px 5px rgba(0, 0, 0, 0.5);
   }
@@ -38,16 +40,17 @@
       width: 60vw;
       height: 60vw;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 20vh;
+      left: 20vw;
+      font-size: 40vw;
+      /* transform: translate(-50%, -50%); */
       z-index: 0;
     }
     .circleShadow{
       display: none;
     }
-    .animate__heartBeat{
+    /* .animate__heartBeat{
       display: none;
-    }
+    } */
   }
 </style>

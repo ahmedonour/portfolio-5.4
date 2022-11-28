@@ -5,7 +5,7 @@
 <div class="herotext">
   <p>Hi There I am</p>
   <h1>Ahmed Suliman</h1>
-  <p>Front End Developer & Designer</p>
+  <p>Junior Front-End Developer & Designer 🔥💥</p>
   <p>
     I bring value to my clients by creating beautiful, user-friendly interfaces
     that help them achieve their goals.
@@ -17,6 +17,7 @@
 </div>
 
 <style>
+  
   .herotext {
     height: 50vh;
     width: 45vw;
