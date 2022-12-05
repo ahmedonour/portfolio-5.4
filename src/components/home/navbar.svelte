@@ -15,23 +15,39 @@
     in:fly={{x:1000 , duration: 500}}
     out:fly={{x: -1000 , duration: 500}}
     >
-        <div class="link-wrapper">
+        <div class="link-wrapper" id="link-wrapper">
             <button on:click={toggleVisible}><i class="fas fa-times"></i></button>
-            <li>01 <a href="/" on:click={toggleVisible}> Home</a></li>
-            <li>02 <a href="/about" on:click={toggleVisible}> About</a></li>
-            <li>03 <a href="/project" on:click={toggleVisible}> Projects</a></li>
-            <li>04 <a href="mailto:ahmedonour.49@gmail.com" on:click={toggleVisible}> Contact Me</a></li>
+            <li class="link-item">01 <a id="link-item" href="/" on:click={toggleVisible}> Home</a></li>
+            <li class="link-item">02 <a id="link-item" href="/about" on:click={toggleVisible}> About</a></li>
+            <li class="link-item">03 <a id="link-item" href="/project" on:click={toggleVisible}> Projects</a></li>
+            <li class="link-item">04 <a id="link-item" href="mailto:ahmedonour.49@gmail.com" on:click={toggleVisible}> Contact Me</a></li>
             <div class="en-ar">
                 <a href="/"  on:click={toggleVisible}>EN</a>
                 <a href="/ar" on:click={toggleVisible}>AR</a>
                 <button><i class="fas fa-moon"></i></button>
             </div>
         </div>
+        <div class="bg">
+        </div>
     </ol>
     {/if}
 </nav>
 
 <style>
+    .bg{
+        width: 100vw;
+        height: 100vh;
+        background-image: radial-gradient(
+            rgb(82, 0, 255 , 0.4) 9%,
+            transparent 9%
+        );
+        background-position: 0% 0%;
+        background-size: 12vmin 12vmin;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
     nav{
         width: 100vw;
         height: 80px;
@@ -66,6 +82,7 @@
         left: 0;
         z-index: 99;
         background-color: #24036b;
+        
     }
     .link-wrapper{
         height: 90%;
@@ -73,6 +90,13 @@
         justify-content: center;
         flex-direction: column;
     }
+    .link-item:hover > #link-item{
+        opacity: 0.3;
+    }
+    .link-item:hover > #link-item:hover{
+        opacity: 1;
+    }
+
     ol li{
         text-decoration: none;
         color: white;
@@ -89,8 +113,9 @@
         font-size: 5rem;
         transition: all 800ms ease-in-out;
     }
-    ol li a:hover{
+    ol li a:hover ~ a{
         font-size: 6rem;
+        opacity: 0.3;
     }
     nav h1{
         font-family: 'Plaster';
