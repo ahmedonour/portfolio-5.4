@@ -3,9 +3,9 @@
 </script>
 
 <div class="herotext">
-  <p>Hi There I am</p>
+  <p>Hi There <b style="color: #260090; text-transform:uppercase;">I am</b></p>
   <h1>Ahmed Suliman</h1>
-  <p>Junior Front-End Developer & Designer 🔥💥</p>
+  <p>Junior Front-End Developer & Designer 🔥</p>
   <p>
     I bring value to my clients by creating beautiful, user-friendly interfaces
     that help them achieve their goals.
@@ -20,18 +20,18 @@
   
   .herotext {
     height: 50vh;
-    width: 45vw;
+    width: 80vw;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
     font-family: "Montserrat";
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 2;
   }
   .herotext h1 {
-    font-size: 5vw;
+    font-size: 9vw;
     font-weight: 900;
     color: var(--clr-Dark-Purple);
   }
@@ -47,10 +47,12 @@
   .herotext p:nth-of-type(3) {
     font-weight: 500;
     font-size: 1.5rem;
+    font-family: 'Cabin', sans-serif;
+    width: 70%;
   }
   .heroButtons {
     display: flex;
-    width: 100%;
+    width: 60%;
     justify-content: space-between;
   }
   @media screen and (max-width: 414px) {
