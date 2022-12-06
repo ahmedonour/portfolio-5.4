@@ -17,28 +17,32 @@
     >
         <div class="link-wrapper" id="link-wrapper">
             <button on:click={toggleVisible}><i class="fas fa-times"></i></button>
-            <li class="link-item">01 <a id="link-item" href="/" on:click={toggleVisible}> Home</a></li>
-            <li class="link-item">02 <a id="link-item" href="/about" on:click={toggleVisible}> About</a></li>
-            <li class="link-item">03 <a id="link-item" href="/project" on:click={toggleVisible}> Projects</a></li>
-            <li class="link-item">04 <a id="link-item" href="mailto:ahmedonour.49@gmail.com" on:click={toggleVisible}> Contact Me</a></li>
+            <div id="link-items">
+                <a href="/" class="link-item" on:click={toggleVisible}> <li>Home</li></a>
+                <a href="/about" class="link-item" on:click={toggleVisible}> <li>About</li></a>
+                <a href="/project" class="link-item" on:click={toggleVisible}> <li>Projects</li></a>
+                <a href="mailto:ahmedonour.49@gmail.com" class="link-item" on:click={toggleVisible}> <li>Contact Me</li> </a>
+                <div class="bg">
+                </div>            
+            </div>
             <div class="en-ar">
                 <a href="/"  on:click={toggleVisible}>EN</a>
                 <a href="/ar" on:click={toggleVisible}>AR</a>
-                <button><i class="fas fa-moon"></i></button>
+                <a href="/"><i class="fas fa-moon"></i></a>
             </div>
         </div>
-        <div class="bg">
-        </div>
+        
     </ol>
     {/if}
 </nav>
 
 <style>
+
     .bg{
         width: 100vw;
         height: 100vh;
         background-image: radial-gradient(
-            rgb(82, 0, 255 , 0.4) 9%,
+            rgb(82, 0, 255 , 0.4) 30%,
             transparent 9%
         );
         background-position: 0% 0%;
@@ -47,6 +51,11 @@
         top: 0px;
         left: 0px;
         z-index: -1;
+        transition: all 600ms ease-in-out;
+    }
+    #link-items:hover > .bg{
+        background-size: 11vmin 11vmin;
+        opacity: .5;
     }
     nav{
         width: 100vw;
@@ -56,7 +65,7 @@
         align-items: center;
         margin-bottom: 3rem;
         padding: 0 9rem;
-        background-color: #5200ff;
+        background-color: transparent;
     }
     nav button{
         background-color: transparent;
@@ -69,7 +78,8 @@
         cursor: pointer;
     }
     ol{
-        list-style: none;
+        list-style: circle;
+        /* list-style-type: disc; */
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -85,23 +95,33 @@
         
     }
     .link-wrapper{
+        width: 50vw;
         height: 90%;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-    .link-item:hover > #link-item{
-        opacity: 0.3;
+    #link-items{
+        width: 70%;
+        margin-left: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .link-item:hover > #link-item:hover{
+    .link-item{
+        transition: all 600ms ease-in-out;
+    }
+    #link-items:hover > .link-item{
+        opacity: .3;
+    }
+    #link-items:hover > .link-item:hover{
         opacity: 1;
     }
-
-    ol li{
+    ol a{
         text-decoration: none;
         color: white;
         font-family: 'Montserrat';
-        font-weight: var(--fw-400);
+        font-weight: var(--fw-900);
         font-size: 4rem;
         margin-bottom: 2rem;
     }
@@ -137,12 +157,18 @@
     }
     ol .en-ar {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        width: 50%;
+        width: 30%;
+        height: 10%;
+        margin-left: 5rem;
+        
     }
     ol .en-ar a{
         color: white;
+        font-size: 2rem;
+    }
+    ol .en-ar a .fa-moon{
         font-size: 2rem;
     }
     /* @media (prefers-color-scheme: ){

@@ -73,6 +73,7 @@
       flex-direction: column;
       align-items: center;
       height: 200px;
+      width: 100%;
     }
   }
 </style>

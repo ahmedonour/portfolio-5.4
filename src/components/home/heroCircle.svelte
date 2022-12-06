@@ -20,7 +20,7 @@
     grid-row: 2;
   } */
 
-img{
+/* img{
     overflow: hidden;
     position: relative;
     width: 70vw;
@@ -31,7 +31,7 @@ img{
     display: flex;
     justify-content: center;
     
-  }
+  } */
   /* .circle {
     width: 21rem;
     height: 21rem;
