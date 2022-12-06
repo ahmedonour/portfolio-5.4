@@ -1,12 +1,12 @@
 <div class="aboutTesxt">
 	<h1>About</h1>
 	<p>
-		I a<b>m</b> Ahmed Suliman.
+		I am Ahmed Suliman.
 		<br/>
-		I am a highl<b>y</b> motivated a<b>n</b>d driven individu<b>a</b>l who is always looking for new opportunities to
-		learn and grow. I a<b>m</b> a quick l<b>e</b>arner and have a strong des<b>i</b>re to continuou<b>s</b>ly improve my skills.
-		I am also a very team-<b>o</b>rie<b>n</b>ted pers<b>o</b>n and enjoy working collaboratively with others. I am
-		confident in my abilities and always work to prod<b>u</b>ce the best possible <b>r</b>esults.
+		I am a highly motivated and driven individual who is always looking for new opportunities to
+		learn and grow. I am a quick learner and have a strong desire to continuously improve my skills.
+		I am also a very team-oriented person and enjoy working collaboratively with others. I am
+		confident in my abilities and always work to produce the best possible results.
 	</p>
 </div>
 
@@ -26,8 +26,9 @@
 		font-family: var(--ff-montserrat);
 		color: #fff;
         font-size: 20px;
-        font-weight: 300;
+        font-weight: 500;
         text-align: left;
+		line-height: 1.5;
 	}
 	@media screen and (max-width: 414px){
 		.aboutTesxt{

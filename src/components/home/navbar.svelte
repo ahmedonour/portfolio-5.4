@@ -4,6 +4,13 @@
     function toggleVisible(){
         visible = !visible
     }
+    // const menu = document.getElementById('link-wrapper');
+    // Array.from(document.getElementById("link-items"))
+    // .forEach((item,index) =>{
+    //     item.onmouseover = () => {
+    //         menu.dataset.activeIndex = index;
+    //     };
+    // });
 </script>
 <nav>
     <a href="/">
@@ -51,7 +58,7 @@
         top: 0px;
         left: 0px;
         z-index: -1;
-        transition: all 600ms ease-in-out;
+        transition: all 400ms ease;
     }
     #link-items:hover > .bg{
         background-size: 11vmin 11vmin;
@@ -113,10 +120,13 @@
     }
     #link-items:hover > .link-item{
         opacity: .3;
+        font-size: 3rem;
     }
     #link-items:hover > .link-item:hover{
         opacity: 1;
+        font-size: 5rem;
     }
+
     ol a{
         text-decoration: none;
         color: white;
@@ -190,13 +200,21 @@
             padding: 0 2.5rem;
         }
         ol li{
-            font-size: 1.4rem;
+            font-size: 2.4rem;
         }
-        ol li a{
+        ol a{
             font-size: 2.6rem;
         }
         ol .en-ar{
             width: 50vw;
-        }        
+            margin-left: 1rem;
+        }  
+        .link-wrapper{
+            width: 100vw;
+        }
+        #link-items{
+            
+            margin-left: 1rem;
+        }
     }
 </style>
