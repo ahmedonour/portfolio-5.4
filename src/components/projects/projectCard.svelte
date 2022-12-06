@@ -34,11 +34,11 @@
 	}
 	.project {
 		display: flex;
-		flex-direction: row-reverse;
+		flex-direction: column;
 	}
 	.project img {
-		width: 50%;
-		border-radius: 50px;
+		width: 40vw;
+		border-radius: 30px;
 	}
 	.textWraper {
 		/* background-color: red !important; */
@@ -47,10 +47,10 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: baseline;
-		align-items: flex-start;
+		align-items: center;
 	}
 	.textWraper h1 {
-		font-size: 20vh;
+		font-size: 10vh;
 		cursor: pointer;
 	}
 	.textWraper h1:hover ~ p {

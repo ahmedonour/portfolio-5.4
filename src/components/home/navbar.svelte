@@ -181,20 +181,6 @@
     ol .en-ar a .fa-moon{
         font-size: 2rem;
     }
-    /* @media (prefers-color-scheme: ){
-        nav{
-            background-color: transparent;
-        }
-        nav h1{
-            color: #5200ff;
-        }
-        ol li {
-            color: #5200ff;
-        }
-        ol li a{
-            color: #5200ff;
-        }
-    } */
     @media screen and (max-width: 414px){
         nav{
             padding: 0 2.5rem;

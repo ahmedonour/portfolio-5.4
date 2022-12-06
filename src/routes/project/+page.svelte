@@ -21,10 +21,11 @@
 		width: 100vw;
 		height: fit-content;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
 		color: var(--clr-White);
 		font-family: var(--ff-montserrat);
+		padding: 0 3rem;
 	}
 </style>
