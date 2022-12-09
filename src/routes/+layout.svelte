@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import Navbar from '../components/home/navbar.svelte';
 	import anime from 'animejs';
+	import DesktopNavbar from '../components/home/Desktop-navbar.svelte';
 	let isLoaded = false;
 
 	onMount(() => {
@@ -25,7 +26,7 @@
 		isLoaded = true;
 	});
 </script>
-
+<DesktopNavbar />
 <Navbar />
 {#if !isLoaded}
 <div class="loader">

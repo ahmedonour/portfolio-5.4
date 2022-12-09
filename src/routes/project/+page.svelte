@@ -34,7 +34,7 @@
 	.SelectedProjects{
 		display: grid;
 		grid-template-columns: 2;
-		width: 100vw;
+		width: 100%;
 		padding-inline: 5rem;
 	}
 	.otherProjects{
@@ -70,10 +70,10 @@
 		align-items: center; */
 		color: var(--clr-White);
 		font-family: var(--ff-montserrat);
-		padding: 0 3rem;
+		padding: 0 9rem;
 	}
 	main h1{
-		font-size: 9vw;
+		font-size: 8vw;
 	}
 	@media screen and (min-width: 412px){
 		main{

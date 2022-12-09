@@ -67,7 +67,7 @@
     nav{
         width: 100vw;
         height: 80px;
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 3rem;
@@ -183,6 +183,7 @@
     }
     @media screen and (max-width: 414px){
         nav{
+            display: flex;
             padding: 0 2.5rem;
         }
         ol li{
