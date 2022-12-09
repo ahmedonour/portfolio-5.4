@@ -1,9 +1,9 @@
 <script>
-	export let srcPath;
-	export let projectPargraph;
+	// export let srcPath;
+	// export let projectPargraph;
 	export let projectTitle;
-	export let linkToRepo;
-	export let linkTosite;
+	// export let linkToRepo;
+	// export let linkTosite;
 </script>
 
 <!-- <div class="projects-container">
