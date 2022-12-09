@@ -37,7 +37,7 @@
         color: #fff;
         font-weight: 300;
     }
-    @media screen and (max-width: 412px){
+    @media screen and (max-width: 414px){
         nav{
             display: none;
         }
