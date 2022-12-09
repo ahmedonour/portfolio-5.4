@@ -43,7 +43,8 @@
 		flex-direction: column;
 	}
 	.otherProjects h1{
-		font-size: 5rem;
+		font-size: 8vw;
+		font-weight: 900;
 	}
 	.otherProjects .projects{
 		width: 100%;
@@ -74,10 +75,21 @@
 	}
 	main h1{
 		font-size: 8vw;
+		font-weight: 900;
 	}
 	@media screen and (min-width: 412px){
 		main{
 			flex-direction: column;
+			padding: 0 2.5rem;
+		}
+		.otherProjects .projects{
+			padding: 3rem 0;
+		}
+		.SelectedProjects{
+			padding-inline: 0;
+		}
+		.otherProjects{
+			margin-top: 2rem;
 		}
 	}
 </style>

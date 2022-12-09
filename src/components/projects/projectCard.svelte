@@ -132,4 +132,11 @@
 			font-size: 10vh;
 		}
 	} */
+	@media screen and (max-width: 414px){
+		ol{
+			padding-inline: 0;
+			width: 100%;
+			font-size: 2rem;
+		}
+	}
 </style>
