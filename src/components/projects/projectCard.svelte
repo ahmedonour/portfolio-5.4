@@ -6,7 +6,7 @@
 	export let linkTosite;
 </script>
 
-<div class="projects-container">
+<!-- <div class="projects-container">
 	<div class="project">
 		<img src={srcPath} alt="ProjectImage" />
 		<div class="textWraper">
@@ -23,10 +23,29 @@
 		</div>
 		
 	</div>
-</div>
+</div> -->
+<div class="projcets">
+	<div class="projects-list">
+		<ol>
+			<li>{projectTitle}</li>
+		</ol>
 
+	</div>
+</div>
 <style>
-	.projects-container {
+	ol{
+		list-style: none;
+		font-size: 3rem;
+		padding-inline: 3rem;
+		width: 50%;
+		
+	}
+	ol li{
+		border-bottom: 5px solid #fff;
+		cursor: pointer;
+		font-weight: 800;
+	}
+	/* .projects-container {
 		width: 90vw;
 		height: auto;
 		border-radius: 50px;
@@ -41,7 +60,6 @@
 		border-radius: 30px;
 	}
 	.textWraper {
-		/* background-color: red !important; */
 		width: 50%;
 		position: relative;
 		display: flex;
@@ -63,7 +81,6 @@
 	.linkButtons {
     width: auto;
     height: auto;
-	/* background-color: aqua !important; */
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
@@ -111,5 +128,5 @@
 		.textWraper h1 {
 			font-size: 10vh;
 		}
-	}
+	} */
 </style>
