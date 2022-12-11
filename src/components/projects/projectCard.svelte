@@ -16,7 +16,7 @@
 	}
 	ol{
 		list-style: none;
-		font-size: 3rem;
+		font-size:  3rem;
 		padding-inline: 3rem;
 		width: 60%;
 		line-height: 2;
@@ -29,7 +29,7 @@
 		ol{
 			padding-inline: 0;
 			width: 70vw;
-			font-size: 2rem;
+			font-size: calc(3rem - 7vw);
 		}
 	}
 </style>
