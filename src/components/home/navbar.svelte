@@ -184,7 +184,7 @@
     @media screen and (max-width: 414px){
         nav{
             display: flex;
-            padding: 0 2.5rem;
+            padding: 0 1rem;
         }
         ol li{
             font-size: 2.4rem;
