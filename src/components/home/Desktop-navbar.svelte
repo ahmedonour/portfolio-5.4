@@ -35,7 +35,7 @@
     nav .nav_links a{
         font-size: 1.4rem;
         color: #fff;
-        font-weight: 300;
+        font-weight: 400;
     }
     @media screen and (max-width: 414px){
         nav{
