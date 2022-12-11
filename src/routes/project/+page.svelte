@@ -113,7 +113,7 @@
 		font-size: 8vw;
 		font-weight: 900;
 	}
-	@media screen and (min-width: 412px) {
+	@media screen and (max-width: 415px) {
 		main {
 			flex-direction: column;
 			padding: 0 2.5rem;

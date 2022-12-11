@@ -32,7 +32,11 @@
 	}
 	@media screen and (max-width: 414px){
 		.aboutTesxt{
-			width: 90vw;
+			width: 85vw;
+		}
+		p{
+			font-weight: 300;
+			text-align: justify;
 		}
 	}
 </style>

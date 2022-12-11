@@ -3,7 +3,7 @@
 </script>
 
 <div class="herotext">
-  <p>Hi There <b style="color: #260090; text-transform:uppercase;">I am</b></p>
+  <p>Hi There I am</p>
   <h1>Ahmed Suliman</h1>
   <p>Junior Front-End Developer & Designer 🔥</p>
   <p>
@@ -11,7 +11,7 @@
     that help them achieve their goals.
   </p>
   <div class="heroButtons">
-    <Herobuttons links="mailto:ahmedonour.49@gmail.com" title="Contact Me" />
+    <Herobuttons links="mailto:ahmedonour.49@gmail.com" title="Contact" />
     <Herobuttons links="/project" title="Projects" />
   </div>
 </div>
@@ -20,7 +20,7 @@
   
   .herotext {
     height: 50vh;
-    width: 80vw;
+    width: 60vw;
     color: white;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
     grid-row: 2;
   }
   .herotext h1 {
-    font-size: 9vw;
+    font-size: 5vw;
     font-weight: 900;
     color: var(--clr-Dark-Purple);
   }
@@ -52,7 +52,7 @@
   }
   .heroButtons {
     display: flex;
-    width: 60%;
+    width: 80%;
     justify-content: space-between;
   }
   @media screen and (max-width: 414px) {

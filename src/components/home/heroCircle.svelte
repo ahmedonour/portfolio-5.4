@@ -1,15 +1,13 @@
 <script>
 </script>
-<!-- 
+
 <div class="heroCircle ">
   <div class="circle animate__animated animate__heartBeat animate__infinite" />
-  <h1 class="haert animate__animated animate__heartBeat animate__infinite">🖤</h1> 
   <div class="circleShadow" />
-</div> -->
+</div>
 
-  <!-- <img src="./151.svg" alt=""> -->
 <style>
-  /* .heroCircle {
+  .heroCircle {
     width: auto;
     height:25em;
     display: flex;
@@ -18,21 +16,8 @@
     align-items: center;
     grid-column: 4;
     grid-row: 2;
-  } */
-
-/* img{
-    overflow: hidden;
-    position: relative;
-    width: 70vw;
-    grid-column: 4;
-    grid-row: 2;
-    position: relative;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: center;
-    
-  } */
-  /* .circle {
+  }
+  .circle {
     width: 21rem;
     height: 21rem;
     font-size: 20vw;
@@ -47,22 +32,23 @@
     border-radius: 30%;
     background-color: rgb(0, 0, 0, 0.5);
     filter: blur(10px);
-  } */
-  @media screen and (max-width: 414px){
-    /* .circle{
-      width: 60vw;
+  }
+  @media (max-width: 414px){
+    .circle{
+      /* width: 60vw;
       height: 60vw;
       position: absolute;
       top: 20vh;
       left: 20vw;
       font-size: 40vw;
-      z-index: 0;
-    } */
-    /* .circleShadow{
+      z-index: 0; */
       display: none;
-    } */
-    /* .animate__heartBeat{
+    }
+    .circleShadow{
       display: none;
-    } */
+    }
+     .animate__heartBeat{
+      display: none;
+    }
   }
 </style>
