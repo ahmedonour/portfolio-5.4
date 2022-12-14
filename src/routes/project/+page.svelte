@@ -1,6 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
 	import ProjectCard from '../../components/projects/projectCard.svelte';
+	import ShowCase from '../../components/projects/showCase.svelte';
+	import toggleVisble from '../../components/projects/showCase.svelte'
+	let visble = false
 	onMount(() => {
 		const cursor = document.querySelector('.cursor');
 		document.addEventListener('mousemove', (e) => {
@@ -8,31 +11,43 @@
 			cursor.style.top = e.pageY + 'px';
 		});
 	});
+	
 </script>
 
 <main>
 	<h1>Selected Projects</h1>
 	<div class="SelectedProjects">
-		<ProjectCard
-			srcPath="/mouckup/m.a.m.png"
-			projectTitle="01  M.A.M"
-			projectPargraph="A project for a freind"
-		/>
-		<ProjectCard
-			srcPath="/mouckup/m.a.m.png"
-			projectTitle="02 Roshan"
-			projectPargraph="A project for a freind"
-		/>
-		<ProjectCard
-			srcPath="/mouckup/m.a.m.png"
-			projectTitle="03 Product Card"
-			projectPargraph="A project for a freind"
-		/>
+		<div class="project-1">
+
+				<ProjectCard
+					projectImg="/mouckup/Book.png"
+				/>
+			<ShowCase 
+			srcPath='/mouckup/Book.png'
+			projectName = 'Book Author Landing Page'
+			projectDes = 'lorem'
+			/>
+		</div>
+		<div class="project-2">
+			<ProjectCard
+				projectImg="/mouckup/m.a.m.png"
+			/>
+		</div>
+		<div class="project-3">
+			<ProjectCard
+				projectImg="/mouckup/procduct.png"
+			/>
+		</div>
+		<div class="project-4">
+			<ProjectCard
+				projectImg="/mouckup/roshan.png"
+			/>
+		</div>
 	</div>
 	<div class="otherProjects">
 		<h1>Other Projects</h1>
 		<div class="projects">
-			<i class="fab fa-github" />
+			<a href="https://github.com/ahmedonour/" target="_blank" rel="noreferrer"><i class="fab fa-github" /></a>
 		</div>
 	</div>
 	<div class="cursor"><p>See More</p></div>
@@ -65,10 +80,31 @@
 	}
 	.SelectedProjects {
 		display: grid;
-		grid-template-columns: 2;
-		width: 70%;
+	
+		grid-template-columns: repeat(2 , 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		place-items: center center;
+		row-gap:  5rem;
+		column-gap: 5rem;
+		/* width: 100%; */
 		padding-inline: 2rem;
 		cursor: none;
+	}
+	.SelectedProjects .project-1{
+		grid-row: 1;
+		grid-column: 2;
+	}
+	.SelectedProjects .project-2{
+		grid-row: 2;
+		grid-column: 2;
+	}
+	.SelectedProjects .project-3{
+		grid-row: 1;
+		grid-column: 1;
+	}
+	.SelectedProjects .project-4{
+		grid-row: 2;
+		grid-column: 1;
 	}
 	.SelectedProjects:hover ~ .cursor{
 		transform: scale(3);

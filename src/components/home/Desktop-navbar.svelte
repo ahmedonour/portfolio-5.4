@@ -1,6 +1,8 @@
 <nav>
     <h1>AS</h1>
     <div class="nav_links">
+        <p>ar</p>
+        <button><i class="fas fa-sun"></i></button>
         <a href="/">
             <li>01 Home</li>
         </a><a href="/about">
@@ -28,14 +30,24 @@
     nav .nav_links{
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        width: 60%;
         font-family: var(--ff-montserrat);
         list-style: none;
     }
-    nav .nav_links a{
-        font-size: 1.4rem;
+    nav .nav_links button{
+        background: none;
+        border: none;
+        font-size: 1.5rem;
         color: #fff;
-        font-weight: 400;
+    }
+    nav .nav_links p{
+        color: #fff;
+        font-weight: 700;
+    }
+    nav .nav_links a{
+        font-size: 1.2rem;
+        color: #fff;
+        font-weight: 200;
     }
     @media screen and (max-width: 414px){
         nav{
