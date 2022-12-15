@@ -2,8 +2,8 @@
 	import { onMount } from 'svelte';
 	import ProjectCard from '../../components/projects/projectCard.svelte';
 	import ShowCase from '../../components/projects/showCase.svelte';
-	import toggleVisble from '../../components/projects/showCase.svelte'
-	let visble = false
+	import toggleVisble from '../../components/projects/showCase.svelte';
+	let visble = false;
 	onMount(() => {
 		const cursor = document.querySelector('.cursor');
 		document.addEventListener('mousemove', (e) => {
@@ -11,57 +11,49 @@
 			cursor.style.top = e.pageY + 'px';
 		});
 	});
-	
 </script>
 
 <main>
 	<h1>Selected Projects</h1>
 	<div class="SelectedProjects">
-		<div class="project-1">
-
-				<ProjectCard
-					projectImg="/mouckup/Book.png"
-				/>
-			<ShowCase 
-			srcPath='/mouckup/Book.png'
-			projectName = 'Book Author Landing Page'
-			projectDes = 'lorem'
+		<div class="project-1" >
+			<ProjectCard projectImg="/mouckup/Book.png" />
+			<ShowCase
+				srcPath="/mouckup/Book.png"
+				projectName="Book Author Landing Page"
+				projectDes="lorem"
 			/>
 		</div>
 		<div class="project-2">
-			<ProjectCard
-				projectImg="/mouckup/m.a.m.png"
-			/>
+			<ProjectCard projectImg="/mouckup/m.a.m.png" />
 		</div>
 		<div class="project-3">
-			<ProjectCard
-				projectImg="/mouckup/procduct.png"
-			/>
+			<ProjectCard projectImg="/mouckup/procduct.png" />
 		</div>
 		<div class="project-4">
-			<ProjectCard
-				projectImg="/mouckup/roshan.png"
-			/>
+			<ProjectCard projectImg="/mouckup/roshan.png" />
 		</div>
 	</div>
 	<div class="otherProjects">
 		<h1>Other Projects</h1>
 		<div class="projects">
-			<a href="https://github.com/ahmedonour/" target="_blank" rel="noreferrer"><i class="fab fa-github" /></a>
+			<a href="https://github.com/ahmedonour/" target="_blank" rel="noreferrer"
+				><i class="fab fa-github" /></a
+			>
 		</div>
 	</div>
 	<div class="cursor"><p>See More</p></div>
 </main>
 
 <style>
-	.cursor{
+	.cursor {
 		background-color: rgba(255, 255, 255, 0.171);
 		width: 40px;
 		height: 40px;
 		border: 2px solid black;
 		border-radius: 50px;
-		transition: .1s;
-		transform: translate( -50% , -50%);
+		transition: 0.1s;
+		transform: translate(-50%, -50%);
 		pointer-events: none;
 		position: fixed;
 		display: flex;
@@ -71,7 +63,7 @@
 		-webkit-backdrop-filter: blur(1px);
 		mix-blend-mode: normal;
 	}
-	.cursor p{
+	.cursor p {
 		font-size: 50%;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 500;
@@ -80,33 +72,33 @@
 	}
 	.SelectedProjects {
 		display: grid;
-	
-		grid-template-columns: repeat(2 , 1fr);
+
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
 		place-items: center center;
-		row-gap:  5rem;
+		row-gap: 5rem;
 		column-gap: 5rem;
 		/* width: 100%; */
 		padding-inline: 2rem;
 		cursor: none;
 	}
-	.SelectedProjects .project-1{
+	.SelectedProjects .project-1 {
 		grid-row: 1;
 		grid-column: 2;
 	}
-	.SelectedProjects .project-2{
+	.SelectedProjects .project-2 {
 		grid-row: 2;
 		grid-column: 2;
 	}
-	.SelectedProjects .project-3{
+	.SelectedProjects .project-3 {
 		grid-row: 1;
 		grid-column: 1;
 	}
-	.SelectedProjects .project-4{
+	.SelectedProjects .project-4 {
 		grid-row: 2;
 		grid-column: 1;
 	}
-	.SelectedProjects:hover ~ .cursor{
+	.SelectedProjects:hover ~ .cursor {
 		transform: scale(3);
 	}
 	.otherProjects {
@@ -159,6 +151,8 @@
 		}
 		.SelectedProjects {
 			padding-inline: 0;
+			row-gap: 1rem;
+			column-gap: 1rem;
 		}
 		.otherProjects {
 			margin-top: 2rem;
