@@ -1,28 +1,26 @@
 <script>
 	import { onMount } from 'svelte';
 	import ProjectCard from '../../components/projects/projectCard.svelte';
-	import ShowCase from '../../components/projects/showCase.svelte';
-	import toggleVisble from '../../components/projects/showCase.svelte';
-	let visble = false;
-	onMount(() => {
-		const cursor = document.querySelector('.cursor');
-		document.addEventListener('mousemove', (e) => {
-			cursor.style.left = e.pageX + 'px';
-			cursor.style.top = e.pageY + 'px';
-		});
-	});
+	// onMount(() => {
+	// 	const cursor = document.querySelector('.cursor');
+	// 	document.addEventListener('mousemove', (e) => {
+	// 		cursor.style.left = e.pageX + 'px';
+	// 		cursor.style.top = e.pageY + 'px';
+	// 	});
+	// });
 </script>
 
 <main>
 	<h1>Selected Projects</h1>
 	<div class="SelectedProjects">
 		<div class="project-1" >
-			<ProjectCard projectImg="/mouckup/Book.png" />
-			<ShowCase
-				srcPath="/mouckup/Book.png"
-				projectName="Book Author Landing Page"
-				projectDes="lorem"
+			<ProjectCard 
+			projectImg="/mouckup/Book.png"
+			srcPath="/mouckup/Book.png"
+			projectName="Book Author Landing Page"
+			projectDes="lorem"
 			/>
+			<!-- <div class="cursor"><p>See More</p></div> -->
 		</div>
 		<div class="project-2">
 			<ProjectCard projectImg="/mouckup/m.a.m.png" />
@@ -33,6 +31,7 @@
 		<div class="project-4">
 			<ProjectCard projectImg="/mouckup/roshan.png" />
 		</div>
+		
 	</div>
 	<div class="otherProjects">
 		<h1>Other Projects</h1>
@@ -42,11 +41,11 @@
 			>
 		</div>
 	</div>
-	<div class="cursor"><p>See More</p></div>
+	
 </main>
 
 <style>
-	.cursor {
+	/* .cursor {
 		background-color: rgba(255, 255, 255, 0.171);
 		width: 40px;
 		height: 40px;
@@ -54,9 +53,8 @@
 		border-radius: 50px;
 		transition: 0.1s;
 		transform: translate(-50%, -50%);
-		pointer-events: none;
 		position: fixed;
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: center;
 		backdrop-filter: blur(1px);
@@ -70,6 +68,12 @@
 		text-align: center;
 		color: #000;
 	}
+	.SelectedProjects .project-1 > .cursor{
+		display: flex;
+	}
+	.SelectedProjects .project-1:hover > .cursor {
+		transform: scale(3);
+	} */
 	.SelectedProjects {
 		display: grid;
 
@@ -78,7 +82,6 @@
 		place-items: center center;
 		row-gap: 5rem;
 		column-gap: 5rem;
-		/* width: 100%; */
 		padding-inline: 2rem;
 		cursor: none;
 	}
@@ -97,9 +100,6 @@
 	.SelectedProjects .project-4 {
 		grid-row: 2;
 		grid-column: 1;
-	}
-	.SelectedProjects:hover ~ .cursor {
-		transform: scale(3);
 	}
 	.otherProjects {
 		margin-top: 10rem;
