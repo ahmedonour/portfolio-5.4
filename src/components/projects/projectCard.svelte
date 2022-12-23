@@ -42,7 +42,7 @@
 	}
 	main{
         width: 100vw;
-        height: 100vh;
+        height: auto;
         background-color: rgba(0, 0, 0, 0.2);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
@@ -54,12 +54,13 @@
         flex-direction: column;
         justify-content: end;
         align-items: center;
-		pointer-events: visible;
+        cursor: auto;
+        overflow: scroll;
     }
     main .projectsShowCase{
         background-color: #260090;
         width: 100vw;
-        height: auto;
+        height: fit-content;
         padding-block: 5rem;
         margin-top: 10vh ;
         border-radius: 5rem 5rem 0 0;
@@ -74,12 +75,12 @@
         border: 5px solid #fff;
         font-size: 3rem;
         color: rgb(173, 0, 0);
-        position: absolute;
+        position: relative;
         width: 5rem;
         height: 5rem;
         border-radius: 50px;
-        right: 5rem;
-        top: 8rem;
+        left:40%;
+        top: 30%;
         cursor: pointer;
         transition: all 550ms ease-in;
     }
@@ -95,5 +96,9 @@
     main .projectsShowCase .project-image img{
         width: 30%;
         border-radius: 20px;
+    }
+    .projectDescription{
+        margin-top: 2rem;
+        width: 50%;
     }
 </style>

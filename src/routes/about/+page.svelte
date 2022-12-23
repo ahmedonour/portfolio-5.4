@@ -3,7 +3,6 @@
 	import AboutCircle from "../../components/About/aboutCircle.svelte";
 	import AboutText from "../../components/About/aboutText.svelte";
 
-
 </script>
 
 
@@ -13,6 +12,7 @@
         <AboutText />
         <AboutButton links="/project" title="Projects"/>
     </div>
+
 </main>
 <style>
     main{

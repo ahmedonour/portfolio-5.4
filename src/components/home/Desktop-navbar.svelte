@@ -1,7 +1,7 @@
 <nav>
     <h1>AS</h1>
     <div class="nav_links">
-        <p>ar</p>
+        <p><a href="/ar">ar</a></p>
         <button><i class="fas fa-sun"></i></button>
         <a href="/">
             <li>01 Home</li>
