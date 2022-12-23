@@ -12,6 +12,12 @@
     //     };
     // });
 </script>
+<svelte:head>
+  <script
+    src="https://kit.fontawesome.com/f3c7bd6f07.js"
+    crossorigin="anonymous"
+  ></script>
+</svelte:head>
 <nav>
     <a href="/">
         <h1>AS</h1>
@@ -36,6 +42,14 @@
                 <a href="/"  on:click={toggleVisible}>EN</a>
                 <a href="/ar" on:click={toggleVisible}>AR</a>
                 <a href="/"><i class="fas fa-moon"></i></a>
+
+            </div>
+            <div class="socialIcons">
+                <a href="https://www.github.com/ahmedonour" target="_blank" rel="noreferrer"><i class="fab fa-github" /></a>
+                <a href="https://www.dev.to/ahmed_onour" target="_blank" rel="noreferrer"><i class="fab fa-dev" /></a>
+                <a href="mailto:ahmedonour.49@gmail.com"  target="_blank" rel="noreferrer"><i class="fas fa-envelope" /></a>
+                <a href="https://www.twitter.com/ahmed_onour" target="_blank" rel="noreferrer"><i class="fab fa-twitter" /></a>
+                <a href="https://www.fiverr.com/ahmed_onour" target="_blank" rel="noreferrer"><i class="fas fa-business-time" /></a>
             </div>
         </div>
         
@@ -44,7 +58,12 @@
 </nav>
 
 <style>
-
+    .socialIcons{
+        width: 75%;
+        
+        display: flex;
+        justify-content: space-between;
+    }
     .bg{
         width: 100vw;
         height: 100vh;
@@ -172,6 +191,7 @@
         width: 30%;
         height: 10%;
         margin-left: 5rem;
+        margin-top: 3rem;
         
     }
     ol .en-ar a{
