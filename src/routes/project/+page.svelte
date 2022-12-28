@@ -13,33 +13,34 @@
 <main>
 	<h1>Selected Projects</h1>
 	<div class="SelectedProjects">
-		<div class="project-1" >
-			<ProjectCard 
-			projectImg="/mouckup/Book.png"
-			srcPath="/mouckup/Book.png"
-			projectName="Book Author Landing Page"
-			projectDes="lorem"
+		<div class="project-1">
+			<ProjectCard
+				projectImg="/mouckup/Book.png"
+				srcPath="/mouckup/Book.png"
+				projectName="Book Author Landing Page"
+				projectDes="lorem"
 			/>
 			<!-- <div class="cursor"><p>See More</p></div> -->
 		</div>
 		<div class="project-2">
-			<ProjectCard 
-			projectImg="/mouckup/m.a.m.png"
-			srcPath="/mouckup/m.a.m.png"
-			projectName="M.A.M"
-			projectDes="I am proud to present the product card I designed and developed, inspired by the Front End Mentor challenge. This card is an effective and efficient way to showcase a product, highlighting its features and benefits in an attractive and user-friendly way. The design is modern and sleek, with a focus on creating an aesthetically pleasing and intuitive experience for the user. The card also includes a clear call-to-action, so that customers can easily take the next step and purchase the product. Overall, I am pleased with the results of this project, and I am confident that it will be a valuable asset to any business."
+			<ProjectCard
+				projectImg="/mouckup/m.a.m.png"
+				srcPath="/mouckup/m.a.m.png"
+				projectName="M.A.M"
+				projectDes="I am proud to present the product card I designed and developed, inspired by the Front End Mentor challenge. This card is an effective and efficient way to showcase a product, highlighting its features and benefits in an attractive and user-friendly way. The design is modern and sleek, with a focus on creating an aesthetically pleasing and intuitive experience for the user. The card also includes a clear call-to-action, so that customers can easily take the next step and purchase the product. Overall, I am pleased with the results of this project, and I am confident that it will be a valuable asset to any business."
 			/>
 		</div>
 		<div class="project-3">
-			<ProjectCard projectImg="/mouckup/procduct.png"
-			srcPath="/mouckup/procduct.png"
-			projectName="Product Card"
-			projectDes="I am proud to present the product card I designed and developed, inspired by the Front End Mentor challenge. This card is an effective and efficient way to showcase a product, highlighting its features and benefits in an attractive and user-friendly way. The design is modern and sleek, with a focus on creating an aesthetically pleasing and intuitive experience for the user. The card also includes a clear call-to-action, so that customers can easily take the next step and purchase the product. Overall, I am pleased with the results of this project, and I am confident that it will be a valuable asset to any business." />
+			<ProjectCard
+				projectImg="/mouckup/procduct.png"
+				srcPath="/mouckup/procduct.png"
+				projectName="Product Card"
+				projectDes="I am proud to present the product card I designed and developed, inspired by the Front End Mentor challenge. This card is an effective and efficient way to showcase a product, highlighting its features and benefits in an attractive and user-friendly way. The design is modern and sleek, with a focus on creating an aesthetically pleasing and intuitive experience for the user. The card also includes a clear call-to-action, so that customers can easily take the next step and purchase the product. Overall, I am pleased with the results of this project, and I am confident that it will be a valuable asset to any business."
+			/>
 		</div>
 		<div class="project-4">
 			<ProjectCard projectImg="/mouckup/roshan.png" />
 		</div>
-		
 	</div>
 	<div class="otherProjects">
 		<h1>Other Projects</h1>
@@ -49,7 +50,6 @@
 			>
 		</div>
 	</div>
-	
 </main>
 
 <style>

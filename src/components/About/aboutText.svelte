@@ -2,11 +2,11 @@
 	<h1>About</h1>
 	<p>
 		I am Ahmed Suliman.
-		<br/>
-		I am a highly motivated and driven individual who is always looking for new opportunities to
-		learn and grow. I am a quick learner and have a strong desire to continuously improve my skills.
-		I am also a very team-oriented person and enjoy working collaboratively with others. I am
-		confident in my abilities and always work to produce the best possible results.
+		<br />
+		I am a highly motivated and driven individual who is always looking for new opportunities to learn
+		and grow. I am a quick learner and have a strong desire to continuously improve my skills. I am also
+		a very team-oriented person and enjoy working collaboratively with others. I am confident in my abilities
+		and always work to produce the best possible results.
 	</p>
 </div>
 
@@ -20,21 +20,21 @@
 		font-weight: 800;
 		font-size: 4.5rem;
 		color: var(--clr-Dark-Purple);
-        text-align: center;
+		text-align: center;
 	}
 	p {
 		font-family: var(--ff-montserrat);
 		color: #fff;
-        font-size: 20px;
-        font-weight: 500;
-        text-align: left;
+		font-size: 20px;
+		font-weight: 500;
+		text-align: left;
 		line-height: 1.5;
 	}
-	@media screen and (max-width: 414px){
-		.aboutTesxt{
+	@media screen and (max-width: 414px) {
+		.aboutTesxt {
 			width: 85vw;
 		}
-		p{
+		p {
 			font-weight: 300;
 			text-align: justify;
 		}

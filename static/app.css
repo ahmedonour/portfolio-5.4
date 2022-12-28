@@ -1,7 +1,7 @@
 :root {
 	/* Font Family */
-	--ff-montserrat: "Montserrat", sans-serif;
-	--ff-Plaster: "Plaster", cursive;
+	--ff-montserrat: 'Montserrat', sans-serif;
+	--ff-Plaster: 'Plaster', cursive;
 	/* Font Weight */
 	--fw-100: 100;
 	--fw-200: 200;
@@ -20,7 +20,7 @@
 	--clr-White: #fff;
 	--clr-Black: #000;
 }
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -29,13 +29,12 @@ body::-webkit-scrollbar {
 	width: 0;
 	display: none;
 }
-body{
+body {
 	background-color: var(--clr-Purple);
 }
-a{
+a {
 	color: var(--clr-Dark-Purple);
 	text-decoration: none;
-  font-family: var(--ff-montserrat);
-  font-weight: var(--fw-900);
-
+	font-family: var(--ff-montserrat);
+	font-weight: var(--fw-900);
 }

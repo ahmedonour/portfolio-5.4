@@ -1,3 +1,3 @@
-<svg >
-    <path></path>
+<svg>
+	<path />
 </svg>
