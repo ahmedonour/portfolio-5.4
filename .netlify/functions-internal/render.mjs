@@ -4,27 +4,23 @@ export const handler = init({
 	appDir: '_app',
 	appPath: '_app',
 	assets: new Set([
-		'103.svg',
-		'13.svg',
-		'151.svg',
 		'AS.svg',
 		'ASlight.svg',
 		'Cursor.png',
-		'favicon.png',
+		'app.css',
 		'mouckup/Book.png',
 		'mouckup/m.a.m.png',
 		'mouckup/procduct.png',
-		'mouckup/roshan.png',
-		'surrealist.jpg'
+		'mouckup/roshan.png'
 	]),
-	mimeTypes: { '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg' },
+	mimeTypes: { '.svg': 'image/svg+xml', '.png': 'image/png', '.css': 'text/css' },
 	_: {
 		entry: {
-			file: '_app/immutable/start-058e1762.js',
+			file: '_app/immutable/start-d411588b.js',
 			imports: [
-				'_app/immutable/start-058e1762.js',
-				'_app/immutable/chunks/index-e4df2d6a.js',
-				'_app/immutable/chunks/singletons-2ec708e6.js'
+				'_app/immutable/start-d411588b.js',
+				'_app/immutable/chunks/index-63c2ad18.js',
+				'_app/immutable/chunks/singletons-264c8a9b.js'
 			],
 			stylesheets: [],
 			fonts: []
@@ -35,7 +31,8 @@ export const handler = init({
 			() => import('../server/nodes/2.js'),
 			() => import('../server/nodes/3.js'),
 			() => import('../server/nodes/4.js'),
-			() => import('../server/nodes/5.js')
+			() => import('../server/nodes/5.js'),
+			() => import('../server/nodes/6.js')
 		],
 		routes: [
 			{
@@ -57,12 +54,21 @@ export const handler = init({
 				endpoint: null
 			},
 			{
+				id: '/ar',
+				pattern: /^\/ar\/?$/,
+				names: [],
+				types: [],
+				optional: [],
+				page: { layouts: [0], errors: [1], leaf: 4 },
+				endpoint: null
+			},
+			{
 				id: '/contact',
 				pattern: /^\/contact\/?$/,
 				names: [],
 				types: [],
 				optional: [],
-				page: { layouts: [0], errors: [1], leaf: 4 },
+				page: { layouts: [0], errors: [1], leaf: 5 },
 				endpoint: null
 			},
 			{
@@ -71,7 +77,7 @@ export const handler = init({
 				names: [],
 				types: [],
 				optional: [],
-				page: { layouts: [0], errors: [1], leaf: 5 },
+				page: { layouts: [0], errors: [1], leaf: 6 },
 				endpoint: null
 			}
 		],

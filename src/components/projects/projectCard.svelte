@@ -17,6 +17,7 @@
 		<button on:click={toggleVisible}><i class="fas fa-x" /></button>
 		<div class="projectsShowCase">
 			<div class="project-image">
+				<!-- svelte-ignore a11y-img-redundant-alt -->
 				<img src={srcPath} alt="project image" />
 			</div>
 			<div class="projectDescription">

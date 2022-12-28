@@ -4,7 +4,7 @@
 </script>
 
 <div class="heroBtns">
-	<a href={links}><button>{title}</button></a>
+	<a href={links}><button id="btn">{title}</button></a>
 	<div class="btnShadow" />
 </div>
 
