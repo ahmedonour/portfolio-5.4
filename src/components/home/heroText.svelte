@@ -11,7 +11,7 @@
 		achieve their goals.
 	</p>
 	<div class="heroButtons">
-		<Herobuttons links="mailto:ahmedonour.49@gmail.com" title="Contact" />
+		<Herobuttons links="mailto:contactme@ahmedsuliman.com" title="Contact" />
 		<Herobuttons links="/project" title="Projects" />
 	</div>
 </div>
