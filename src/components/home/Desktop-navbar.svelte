@@ -9,7 +9,7 @@
 			<li>02 About</li>
 		</a><a href="/project">
 			<li>03 Projects</li>
-		</a><a href="mailto:ahmedonour.49@gmail.com">
+		</a><a href="mailto:contactme@ahmedsuliman.com">
 			<li>04 Contact Me</li>
 		</a>
 	</div>
