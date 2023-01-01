@@ -8,7 +8,7 @@
 	<a href="https://www.dev.to/ahmed_onour" target="_blank" rel="noreferrer"
 		><i class="fab fa-dev" /></a
 	>
-	<a href="mailto:contactme@ahmedsuliman.com" target="_blank" rel="noreferrer"
+	<a href="mailto:ahmedonour.49@gmail.com" target="_blank" rel="noreferrer"
 		><i class="fas fa-envelope" /></a
 	>
 	<a href="https://www.twitter.com/ahmed_onour" target="_blank" rel="noreferrer"

@@ -29,7 +29,7 @@
 					<a href="/" class="link-item" on:click={toggleVisible}> <li>Home</li></a>
 					<a href="/about" class="link-item" on:click={toggleVisible}> <li>About</li></a>
 					<a href="/project" class="link-item" on:click={toggleVisible}> <li>Projects</li></a>
-					<a href="mailto:contactme@ahmedsuliman.com" class="link-item" on:click={toggleVisible}>
+					<a href="mailto:ahmedonour.49@gmail.com" class="link-item" on:click={toggleVisible}>
 						<li>Contact Me</li>
 					</a>
 					<div class="bg" />
@@ -46,7 +46,7 @@
 					<a href="https://www.dev.to/ahmed_onour" target="_blank" rel="noreferrer"
 						><i class="fab fa-dev" /></a
 					>
-					<a href="mailto:contactme@ahmedsuliman.com" target="_blank" rel="noreferrer"
+					<a href="mailto:ahmedonour.49@gmail.com" target="_blank" rel="noreferrer"
 						><i class="fas fa-envelope" /></a
 					>
 					<a href="https://www.twitter.com/ahmed_onour" target="_blank" rel="noreferrer"
