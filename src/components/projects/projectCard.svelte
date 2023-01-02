@@ -47,7 +47,7 @@
 		background-color: rgba(0, 0, 0, 0.2);
 		-webkit-backdrop-filter: blur(10px);
 		backdrop-filter: blur(10px);
-		position: fixed;
+		position: absolute;
 		z-index: 99;
 		top: 0;
 		left: 0;
@@ -64,24 +64,26 @@
 		height: fit-content;
 		padding-block: 5rem;
 		margin-top: 10vh;
-		border-radius: 5rem 5rem 0 0;
+		border-radius: 1rem 1rem 0 0;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
 		color: white;
+		overflow: scroll;
+
 	}
 	main button {
 		background: none;
 		border: 5px solid #fff;
-		font-size: 3rem;
+		font-size: 1.5rem;
 		color: rgb(173, 0, 0);
-		position: relative;
-		width: 5rem;
-		height: 5rem;
+		position: absolute;
+		width: 3rem;
+		height: 3rem;
 		border-radius: 50px;
-		left: 40%;
-		top: 30%;
+		right: 10%;
+		top: 10%;
 		cursor: pointer;
 		transition: all 550ms ease-in;
 	}
@@ -97,9 +99,20 @@
 	main .projectsShowCase .project-image img {
 		width: 30%;
 		border-radius: 20px;
+		margin: 2rem;
 	}
 	.projectDescription {
-		margin-top: 2rem;
+
 		width: 50%;
+		line-height: 1.5;
+		text-align: justify;
+	}
+	@media only screen and (max-width: 420px) {
+		main .projectsShowCase .project-image img{
+			width: calc(100% - 2rem);
+		}
+		.projectDescription{
+			width: calc(100% - 2rem);
+		}
 	}
 </style>

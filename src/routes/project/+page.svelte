@@ -18,7 +18,7 @@
 				projectImg="/mouckup/Book.png"
 				srcPath="/mouckup/Book.png"
 				projectName="Book Author Landing Page"
-				projectDes="lorem"
+				projectDes="The Book Author Landing Page is a comprehensive platform for authors to showcase their work and reach their target audience. It provides a wide range of features to help authors promote their books, such as a customizable author profile, book reviews, and a blog. This platform is an invaluable resource for authors looking to build their brand and increase their exposure. With its intuitive design and comprehensive features, the Book Author Landing Page is an invaluable tool for any author looking to make their mark in the literary world."
 			/>
 			<!-- <div class="cursor"><p>See More</p></div> -->
 		</div>
@@ -27,7 +27,7 @@
 				projectImg="/mouckup/m.a.m.png"
 				srcPath="/mouckup/m.a.m.png"
 				projectName="M.A.M"
-				projectDes="I am proud to present the product card I designed and developed, inspired by the Front End Mentor challenge. This card is an effective and efficient way to showcase a product, highlighting its features and benefits in an attractive and user-friendly way. The design is modern and sleek, with a focus on creating an aesthetically pleasing and intuitive experience for the user. The card also includes a clear call-to-action, so that customers can easily take the next step and purchase the product. Overall, I am pleased with the results of this project, and I am confident that it will be a valuable asset to any business."
+				projectDes="The M.A.M mobile app is an invaluable tool for keeping track of debts owed to you. It is a reliable and efficient way to ensure that you are always aware of who owes you and how much. The app is user-friendly and provides an easy-to-use interface that allows you to quickly and accurately track all debts. I highly recommend this app to anyone who needs to keep track of their debts. It is an excellent resource that will help you stay organized and informed."
 			/>
 		</div>
 		<div class="project-3">
@@ -43,7 +43,7 @@
 				projectImg="/mouckup/roshan.png"
 				srcPath="/mouckup/roshan.png"
 				projectName="Roshan"
-				projectDes="I am proud to present the product card I designed and developed, inspired by the Front End Mentor challenge. This card is an effective and efficient way to showcase a product, highlighting its features and benefits in an attractive and user-friendly way. The design is modern and sleek, with a focus on creating an aesthetically pleasing and intuitive experience for the user. The card also includes a clear call-to-action, so that customers can easily take the next step and purchase the product. Overall, I am pleased with the results of this project, and I am confident that it will be a valuable asset to any business."
+				projectDes="I am pleased to present the real estate agency website I built for my graduation project. This website is designed to provide users with an easy-to-use platform to search for and purchase real estate. It features a comprehensive database of properties, allowing users to easily browse and compare different listings. Additionally, the website provides users with helpful resources, such as mortgage calculators and tips for finding the perfect property. The website is also designed to be secure and user-friendly, with a secure payment system and intuitive navigation. I am confident that users will have a positive experience when searching for and purchasing real estate with this website."
 			/>
 		</div>
 	</div>
