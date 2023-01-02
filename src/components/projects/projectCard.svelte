@@ -71,7 +71,6 @@
 		align-items: center;
 		color: white;
 		overflow: scroll;
-
 	}
 	main button {
 		background: none;
@@ -102,16 +101,15 @@
 		margin: 2rem;
 	}
 	.projectDescription {
-
 		width: 50%;
 		line-height: 1.5;
 		text-align: justify;
 	}
 	@media only screen and (max-width: 420px) {
-		main .projectsShowCase .project-image img{
+		main .projectsShowCase .project-image img {
 			width: calc(100% - 2rem);
 		}
-		.projectDescription{
+		.projectDescription {
 			width: calc(100% - 2rem);
 		}
 	}

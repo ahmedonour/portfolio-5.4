@@ -20,7 +20,16 @@ test('should render the About page', async ({ page }) => {
 	expect(title).toBe('Front-End Developer Portfolio | Ahmed suliman');
 	const text = await page.textContent('h1');
 	expect(text).toBe('AS');
-        const text2 = await page.textContent('p');
-        expect(text2).toBeDefined
+	const text2 = await page.textContent('p');
+	expect(text2).toBeDefined;
 });
-
+test('should render the project page', async ({ page }) => {
+	await page.goto('http://localhost:5173/project');
+	const title = await page.title();
+	expect(title).toBe('Front-End Developer Portfolio | Ahmed suliman');
+	const text = await page.textContent('h1');
+	expect(text).toBe('AS');
+	const text2 = await page.textContent('p');
+	expect(text2).toBeDefined;
+	console.log("Done ✅")
+});
