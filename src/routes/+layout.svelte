@@ -3,6 +3,7 @@
 	import Navbar from '../components/home/navbar.svelte';
 	import anime from 'animejs';
 	import DesktopNavbar from '../components/home/Desktop-navbar.svelte';
+	import Footer from '../components/footer.svelte';
 	let isLoaded = false;
 
 	onMount(() => {
@@ -157,12 +158,18 @@
 				mask="url(#path-1-outside-1_44_3)"
 			/>
 		</svg>
-		<p>Developed By Me Ahmed Suliman 2022</p>
+		
 	</div>
 {/if}
 <slot />
+<div class="space"></div>
+<Footer />
 
 <style>
+	.space{
+		width: 100vw;
+		height: 10vh;
+	}
 	.loader {
 		position: fixed;
 		top: 0;
@@ -182,9 +189,9 @@
 	svg {
 		grid-row: 3;
 	}
-	p {
+	/* p {
 		grid-row: 5;
-	}
+	} */
 	@media screen and (max-width: 414px) {
 		svg {
 			width: 80%;

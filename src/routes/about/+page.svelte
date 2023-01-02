@@ -19,9 +19,9 @@
 		grid-template-columns: repeat(6, 1fr);
 		height: calc(100vh - calc(3em + 90px));
 	}
-	main > * {
+	/* main > * {
 		flex-basis: 20%;
-	}
+	} */
 	.aboutText {
 		display: flex;
 		flex-direction: column;
