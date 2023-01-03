@@ -53,7 +53,7 @@
 	nav .nav_links a {
 		font-size: 1.2rem;
 		color: #fff;
-		font-weight: 200;
+		font-weight: 500;
 	}
 	nav .nav_links a::after{
 		content: "";
