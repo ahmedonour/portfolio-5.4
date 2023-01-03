@@ -11,7 +11,7 @@
 		<a href="/project">
 			<li>03 Projects</li>
 		</a>
-		<a href="blog.ahmedsuliman.com" target="_blank">
+		<a href="https://blog.ahmedsuliman.com" target="_blank" rel="noreferrer">
 			<li>04 Blog</li>
 		</a>
 		<a href="mailto:ahmedonour.49@gmail.com">
