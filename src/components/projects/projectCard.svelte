@@ -47,7 +47,7 @@
 		background-color: rgba(0, 0, 0, 0.2);
 		-webkit-backdrop-filter: blur(10px);
 		backdrop-filter: blur(10px);
-		position: absolute;
+		position: fixed;
 		z-index: 99;
 		top: 0;
 		left: 0;
@@ -64,6 +64,8 @@
 		height: fit-content;
 		padding-block: 5rem;
 		margin-top: 10vh;
+		top: 0;
+		left: 0;
 		border-radius: 1rem 1rem 0 0;
 		display: flex;
 		justify-content: center;
@@ -74,7 +76,7 @@
 	}
 	main button {
 		background: none;
-		border: 5px solid #fff;
+		border:none;
 		font-size: 1.5rem;
 		color: rgb(173, 0, 0);
 		position: absolute;
@@ -106,6 +108,9 @@
 		text-align: justify;
 	}
 	@media only screen and (max-width: 420px) {
+		main{
+			position: absolute;
+		}
 		main .projectsShowCase .project-image img {
 			width: calc(100% - 2rem);
 		}

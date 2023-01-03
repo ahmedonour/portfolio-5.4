@@ -53,7 +53,18 @@
 	nav .nav_links a {
 		font-size: 1.2rem;
 		color: #fff;
-		font-weight: 500;
+		font-weight: 200;
+	}
+	nav .nav_links a::after{
+		content: "";
+		width: 100%;
+		height: 5px;
+		background-color: #fff;
+		transition: all 0.5s ease-in-out;
+		transform: scale(0);
+	}
+	nav .nav_links a:hover:after{
+		transform: scale(1);
 	}
 	@media screen and (max-width: 414px) {
 		nav {
