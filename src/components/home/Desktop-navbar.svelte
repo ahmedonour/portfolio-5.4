@@ -7,10 +7,15 @@
 			<li>01 Home</li>
 		</a><a href="/about">
 			<li>02 About</li>
-		</a><a href="/project">
+		</a>
+		<a href="/project">
 			<li>03 Projects</li>
-		</a><a href="mailto:ahmedonour.49@gmail.com">
-			<li>04 Contact Me</li>
+		</a>
+		<a href="blog.ahmedsuliman.com" target="_blank">
+			<li>04 Blog</li>
+		</a>
+		<a href="mailto:ahmedonour.49@gmail.com">
+			<li>05 Contact Me</li>
 		</a>
 	</div>
 </nav>
@@ -48,7 +53,7 @@
 	nav .nav_links a {
 		font-size: 1.2rem;
 		color: #fff;
-		font-weight: 200;
+		font-weight: 500;
 	}
 	@media screen and (max-width: 414px) {
 		nav {
