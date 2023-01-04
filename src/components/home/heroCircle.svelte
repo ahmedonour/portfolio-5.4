@@ -2,7 +2,8 @@
 </script>
 
 <div class="heroCircle ">
-	<div class="circle animate__animated animate__heartBeat animate__infinite" />
+	<!-- animate__animated animate__heartBeat animate__infinite -->
+	<div class="circle" />
 	<div class="circleShadow" />
 </div>
 
