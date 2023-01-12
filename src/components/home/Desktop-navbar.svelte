@@ -55,15 +55,15 @@
 		color: #fff;
 		font-weight: 500;
 	}
-	nav .nav_links a::after{
-		content: "";
+	nav .nav_links a::after {
+		content: '';
 		width: 100%;
 		height: 5px;
 		background-color: #fff;
 		transition: all 0.5s ease-in-out;
 		transform: scale(0);
 	}
-	nav .nav_links a:hover:after{
+	nav .nav_links a:hover:after {
 		transform: scale(1);
 	}
 	@media screen and (max-width: 414px) {

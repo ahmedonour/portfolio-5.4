@@ -76,7 +76,7 @@
 	}
 	main button {
 		background: none;
-		border:none;
+		border: none;
 		font-size: 1.5rem;
 		color: rgb(173, 0, 0);
 		position: absolute;
@@ -108,7 +108,7 @@
 		text-align: justify;
 	}
 	@media only screen and (max-width: 420px) {
-		main{
+		main {
 			position: absolute;
 		}
 		main .projectsShowCase .project-image img {

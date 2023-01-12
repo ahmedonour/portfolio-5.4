@@ -29,7 +29,12 @@
 					<a href="/" class="link-item" on:click={toggleVisible}> <li>Home</li></a>
 					<a href="/about" class="link-item" on:click={toggleVisible}> <li>About</li></a>
 					<a href="/project" class="link-item" on:click={toggleVisible}> <li>Projects</li></a>
-					<a href="https://blog.ahmedsuliman.com" target="_blank" rel="noreferrer" on:click={toggleVisible}>
+					<a
+						href="https://blog.ahmedsuliman.com"
+						target="_blank"
+						rel="noreferrer"
+						on:click={toggleVisible}
+					>
 						<li>Blog</li>
 					</a>
 					<a href="mailto:ahmedonour.49@gmail.com" class="link-item" on:click={toggleVisible}>

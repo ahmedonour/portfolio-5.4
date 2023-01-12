@@ -158,15 +158,14 @@
 				mask="url(#path-1-outside-1_44_3)"
 			/>
 		</svg>
-		
 	</div>
 {/if}
 <slot />
-<div class="space"></div>
+<div class="space" />
 <Footer />
 
 <style>
-	.space{
+	.space {
 		width: 100vw;
 		height: 10vh;
 	}

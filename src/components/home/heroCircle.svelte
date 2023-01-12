@@ -48,8 +48,8 @@
 		.circleShadow {
 			display: none;
 		}
-		.animate__heartBeat {
+		/* .animate__heartBeat {
 			display: none;
-		}
+		} */
 	}
 </style>

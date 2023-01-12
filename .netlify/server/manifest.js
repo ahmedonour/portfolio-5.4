@@ -1,10 +1,28 @@
 export const manifest = {
-	appDir: "_app",
-	appPath: "_app",
-	assets: new Set(["AS.svg","ASlight.svg","Cursor.png","app.css","mouckup/Book.png","mouckup/m.a.m.png","mouckup/procduct.png","mouckup/roshan.png"]),
-	mimeTypes: {".svg":"image/svg+xml",".png":"image/png",".css":"text/css"},
+	appDir: '_app',
+	appPath: '_app',
+	assets: new Set([
+		'AS.svg',
+		'ASlight.svg',
+		'Cursor.png',
+		'app.css',
+		'mouckup/Book.png',
+		'mouckup/m.a.m.png',
+		'mouckup/procduct.png',
+		'mouckup/roshan.png'
+	]),
+	mimeTypes: { '.svg': 'image/svg+xml', '.png': 'image/png', '.css': 'text/css' },
 	_: {
-		entry: {"file":"_app/immutable/start-fe3d66d1.js","imports":["_app/immutable/start-fe3d66d1.js","_app/immutable/chunks/index-63c2ad18.js","_app/immutable/chunks/singletons-edf5b976.js"],"stylesheets":[],"fonts":[]},
+		entry: {
+			file: '_app/immutable/start-fe3d66d1.js',
+			imports: [
+				'_app/immutable/start-fe3d66d1.js',
+				'_app/immutable/chunks/index-63c2ad18.js',
+				'_app/immutable/chunks/singletons-edf5b976.js'
+			],
+			stylesheets: [],
+			fonts: []
+		},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
@@ -16,7 +34,7 @@ export const manifest = {
 		],
 		routes: [
 			{
-				id: "/",
+				id: '/',
 				pattern: /^\/$/,
 				names: [],
 				types: [],
@@ -25,7 +43,7 @@ export const manifest = {
 				endpoint: null
 			},
 			{
-				id: "/about",
+				id: '/about',
 				pattern: /^\/about\/?$/,
 				names: [],
 				types: [],
@@ -34,7 +52,7 @@ export const manifest = {
 				endpoint: null
 			},
 			{
-				id: "/ar",
+				id: '/ar',
 				pattern: /^\/ar\/?$/,
 				names: [],
 				types: [],
@@ -43,7 +61,7 @@ export const manifest = {
 				endpoint: null
 			},
 			{
-				id: "/contact",
+				id: '/contact',
 				pattern: /^\/contact\/?$/,
 				names: [],
 				types: [],
@@ -52,7 +70,7 @@ export const manifest = {
 				endpoint: null
 			},
 			{
-				id: "/project",
+				id: '/project',
 				pattern: /^\/project\/?$/,
 				names: [],
 				types: [],
@@ -62,8 +80,7 @@ export const manifest = {
 			}
 		],
 		matchers: async () => {
-			
-			return {  };
+			return {};
 		}
 	}
 };

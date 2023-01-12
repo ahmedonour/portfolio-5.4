@@ -1,12 +1,30 @@
 import { init } from '../serverless.js';
 
 export const handler = init({
-	appDir: "_app",
-	appPath: "_app",
-	assets: new Set(["AS.svg","ASlight.svg","Cursor.png","app.css","mouckup/Book.png","mouckup/m.a.m.png","mouckup/procduct.png","mouckup/roshan.png"]),
-	mimeTypes: {".svg":"image/svg+xml",".png":"image/png",".css":"text/css"},
+	appDir: '_app',
+	appPath: '_app',
+	assets: new Set([
+		'AS.svg',
+		'ASlight.svg',
+		'Cursor.png',
+		'app.css',
+		'mouckup/Book.png',
+		'mouckup/m.a.m.png',
+		'mouckup/procduct.png',
+		'mouckup/roshan.png'
+	]),
+	mimeTypes: { '.svg': 'image/svg+xml', '.png': 'image/png', '.css': 'text/css' },
 	_: {
-		entry: {"file":"_app/immutable/start-fe3d66d1.js","imports":["_app/immutable/start-fe3d66d1.js","_app/immutable/chunks/index-63c2ad18.js","_app/immutable/chunks/singletons-edf5b976.js"],"stylesheets":[],"fonts":[]},
+		entry: {
+			file: '_app/immutable/start-fe3d66d1.js',
+			imports: [
+				'_app/immutable/start-fe3d66d1.js',
+				'_app/immutable/chunks/index-63c2ad18.js',
+				'_app/immutable/chunks/singletons-edf5b976.js'
+			],
+			stylesheets: [],
+			fonts: []
+		},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),
@@ -18,7 +36,7 @@ export const handler = init({
 		],
 		routes: [
 			{
-				id: "/",
+				id: '/',
 				pattern: /^\/$/,
 				names: [],
 				types: [],
@@ -27,7 +45,7 @@ export const handler = init({
 				endpoint: null
 			},
 			{
-				id: "/about",
+				id: '/about',
 				pattern: /^\/about\/?$/,
 				names: [],
 				types: [],
@@ -36,7 +54,7 @@ export const handler = init({
 				endpoint: null
 			},
 			{
-				id: "/ar",
+				id: '/ar',
 				pattern: /^\/ar\/?$/,
 				names: [],
 				types: [],
@@ -45,7 +63,7 @@ export const handler = init({
 				endpoint: null
 			},
 			{
-				id: "/contact",
+				id: '/contact',
 				pattern: /^\/contact\/?$/,
 				names: [],
 				types: [],
@@ -54,7 +72,7 @@ export const handler = init({
 				endpoint: null
 			},
 			{
-				id: "/project",
+				id: '/project',
 				pattern: /^\/project\/?$/,
 				names: [],
 				types: [],
@@ -64,8 +82,7 @@ export const handler = init({
 			}
 		],
 		matchers: async () => {
-			
-			return {  };
+			return {};
 		}
 	}
 });

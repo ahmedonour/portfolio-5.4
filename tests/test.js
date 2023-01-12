@@ -31,5 +31,5 @@ test('should render the project page', async ({ page }) => {
 	expect(text).toBe('AS');
 	const text2 = await page.textContent('p');
 	expect(text2).toBeDefined;
-	console.log("Done ✅")
+	console.log('Done ✅');
 });
