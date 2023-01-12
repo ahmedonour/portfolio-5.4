@@ -23,12 +23,7 @@
 			<!-- <div class="cursor"><p>See More</p></div> -->
 		</div>
 		<div class="project-2">
-			<ProjectCard
-				projectImg="/mouckup/m.a.m.png"
-				srcPath="/mouckup/m.a.m.png"
-				projectName="M.A.M"
-				projectDes="The M.A.M mobile app is an invaluable tool for keeping track of debts owed to you. It is a reliable and efficient way to ensure that you are always aware of who owes you and how much. The app is user-friendly and provides an easy-to-use interface that allows you to quickly and accurately track all debts. I highly recommend this app to anyone who needs to keep track of their debts. It is an excellent resource that will help you stay organized and informed."
-			/>
+			
 		</div>
 		<div class="project-3">
 			<ProjectCard
@@ -39,12 +34,7 @@
 			/>
 		</div>
 		<div class="project-4">
-			<ProjectCard
-				projectImg="/mouckup/roshan.png"
-				srcPath="/mouckup/roshan.png"
-				projectName="Roshan"
-				projectDes="I am pleased to present the real estate agency website I built for my graduation project. This website is designed to provide users with an easy-to-use platform to search for and purchase real estate. It features a comprehensive database of properties, allowing users to easily browse and compare different listings. Additionally, the website provides users with helpful resources, such as mortgage calculators and tips for finding the perfect property. The website is also designed to be secure and user-friendly, with a secure payment system and intuitive navigation. I am confident that users will have a positive experience when searching for and purchasing real estate with this website."
-			/>
+			
 		</div>
 	</div>
 	<div class="otherProjects">
