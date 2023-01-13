@@ -2,7 +2,7 @@
 	import ImageSlider from "../../../components/projects/ImageSlider.svelte";
     import ProjectCard from "../../../components/projects/projectCard.svelte";
 </script>
-<ImageSlider />
+<ImageSlider ShowcaseImage='/fg/Book-Writer.png'/>
 <ProjectCard />
 <!-- projectImg="/mouckup/Book.png"
 srcPath="/mouckup/Book.png"

@@ -2,7 +2,7 @@
 	import ImageSlider from '../../../components/projects/ImageSlider.svelte';
 	import ProjectCard from '../../../components/projects/projectCard.svelte';
 </script>
-<ImageSlider />
+<ImageSlider ShowcaseImage='/fg/Roshan.png'/>
 <ProjectCard />
 
 <!-- <ProjectCard
