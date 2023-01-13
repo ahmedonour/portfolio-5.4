@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import ProjectCard from '../../components/projects/projectCard.svelte';
+	import ProjectLink from '../../components/projects/projectLink.svelte';
 	// onMount(() => {
 	// 	const cursor = document.querySelector('.cursor');
 	// 	document.addEventListener('mousemove', (e) => {
@@ -14,24 +15,18 @@
 	<h1>Selected Projects</h1>
 	<div class="SelectedProjects">
 		<div class="project-1">
-			<ProjectCard
-				projectImg="/mouckup/Book.png"
-				srcPath="/mouckup/Book.png"
-				projectName="Book Author Landing Page"
-				projectDes="The Book Author Landing Page is a comprehensive platform for authors to showcase their work and reach their target audience. It provides a wide range of features to help authors promote their books, such as a customizable author profile, book reviews, and a blog. This platform is an invaluable resource for authors looking to build their brand and increase their exposure. With its intuitive design and comprehensive features, the Book Author Landing Page is an invaluable tool for any author looking to make their mark in the literary world."
-			/>
+			<ProjectLink link='/project/authorLanding/' Imgsrc="/mouckup/Book.png" />
 			<!-- <div class="cursor"><p>See More</p></div> -->
 		</div>
-		<div class="project-2" />
-		<div class="project-3">
-			<ProjectCard
-				projectImg="/mouckup/procduct.png"
-				srcPath="/mouckup/procduct.png"
-				projectName="Product Card"
-				projectDes="I am proud to present the product card I designed and developed, inspired by the Front End Mentor challenge. This card is an effective and efficient way to showcase a product, highlighting its features and benefits in an attractive and user-friendly way. The design is modern and sleek, with a focus on creating an aesthetically pleasing and intuitive experience for the user. The card also includes a clear call-to-action, so that customers can easily take the next step and purchase the product. Overall, I am pleased with the results of this project, and I am confident that it will be a valuable asset to any business."
-			/>
+		<div class="project-2">
+			<ProjectLink link='/project/Roshan/' Imgsrc="/mouckup/roshan.png" />
 		</div>
-		<div class="project-4" />
+		<div class="project-3">
+			<ProjectLink link='/project/MAM/' Imgsrc="/mouckup/m.a.m.png" />
+		</div>
+		<div class="project-4">
+			<ProjectLink link='/project/Product card/' Imgsrc="/mouckup/procduct.png" />
+		</div>
 	</div>
 	<div class="otherProjects">
 		<h1>Other Projects</h1>
