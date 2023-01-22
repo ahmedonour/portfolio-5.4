@@ -4,6 +4,7 @@
 	import anime from 'animejs';
 	import DesktopNavbar from '../components/home/Desktop-navbar.svelte';
 	import Footer from '../components/footer.svelte';
+	import Loader from '../components/loader.svelte';
 	let isLoaded = false;
 
 	onMount(() => {
@@ -30,7 +31,9 @@
 
 <DesktopNavbar />
 <Navbar />
+
 {#if !isLoaded}
+	<Loader />
 	<div class="loader">
 		<svg
 			class="lines"
@@ -161,14 +164,11 @@
 	</div>
 {/if}
 <slot />
-<div class="space" />
+
 <Footer />
 
 <style>
-	.space {
-		width: 100vw;
-		height: 10vh;
-	}
+
 	.loader {
 		position: fixed;
 		top: 0;

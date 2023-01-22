@@ -2,9 +2,10 @@
 	import AboutButton from '../../components/About/aboutButton.svelte';
 	import AboutCircle from '../../components/About/aboutCircle.svelte';
 	import AboutText from '../../components/About/aboutText.svelte';
+	import { fly, fade } from 'svelte/transition';
 </script>
 
-<main>
+<main in:fly={{ x: 200, duration: 1000 }}>
 	<AboutCircle />
 	<div class="aboutText">
 		<AboutText />
@@ -29,7 +30,7 @@
 		grid-column: 4;
 		width: 30vw;
 	}
-	@media screen and (max-width: 414px) {
+	@media screen and (max-width: 1024px) {
 		.aboutText {
 			width: 90vw;
 		}

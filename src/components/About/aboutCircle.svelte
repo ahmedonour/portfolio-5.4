@@ -33,7 +33,7 @@
 		background-color: rgb(0, 0, 0, 0.5);
 		filter: blur(10px);
 	}
-	@media screen and (max-width: 414px) {
+	@media screen and (max-width: 1024px) {
 		.circle {
 			/* width: 60vw;
       height: 60vw;

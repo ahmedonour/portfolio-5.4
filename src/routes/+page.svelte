@@ -2,9 +2,10 @@
 	import HeroCircle from '../components/home/heroCircle.svelte';
 	import HeroText from '../components/home/heroText.svelte';
 	import HeroSocialIcons from '../components/home/heroSocialIcons.svelte';
+	import { fly } from 'svelte/transition';
 </script>
 
-<main>
+<main transition:fly={{ y: 200, duration: 2000 }}>
 	<div class="herosection">
 		<HeroSocialIcons />
 		<HeroText />
@@ -26,7 +27,7 @@
 		height: calc(100vh - calc(3em + 90px));
 	}
 
-	@media screen and (max-width: 414px) {
+	@media screen and (max-width: 1024px) {
 		.herosection {
 			height: 80vh;
 			display: flex;

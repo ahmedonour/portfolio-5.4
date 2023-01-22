@@ -1,8 +1,12 @@
 <script>
+	import Backbutton from '../../../components/projects/backbutton.svelte';
+
 	import ImageSlider from '../../../components/projects/ImageSlider.svelte';
 	import ProjectCard from '../../../components/projects/projectCard.svelte';
 </script>
-<ImageSlider ShowcaseImage='/fg/Roshan.png'/>
+
+<Backbutton />
+<ImageSlider ShowcaseImage="/fg/Roshan.png" />
 <ProjectCard />
 
 <!-- <ProjectCard

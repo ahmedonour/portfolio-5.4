@@ -5,7 +5,8 @@
 		<button><i class="fas fa-sun" /></button>
 		<a href="/">
 			<li>01 Home</li>
-		</a><a href="/about">
+		</a>
+		<a href="/about">
 			<li>02 About</li>
 		</a>
 		<a href="/project">
@@ -51,22 +52,37 @@
 		font-weight: 700;
 	}
 	nav .nav_links a {
-		font-size: 1.2rem;
+		font-size: 1rem;
 		color: #fff;
-		font-weight: 500;
+		font-weight: 800;
 	}
-	nav .nav_links a::after {
-		content: '';
+	nav .nav_links a li {
 		width: 100%;
-		height: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		height: 100%;
+	}
+	nav .nav_links a li::after {
+		content: '';
+
+		width: 100%;
+		transform: scaleX(0);
+		height: 2px;
+		/*	position: absolute;
+		bottom: 0;
+		left: 0;*/
 		background-color: #fff;
-		transition: all 0.5s ease-in-out;
-		transform: scale(0);
+		transform-origin: bottom right;
+		transition: transform 0.25s ease-out;
 	}
-	nav .nav_links a:hover:after {
-		transform: scale(1);
+	nav .nav_links a li:hover:after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
 	}
-	@media screen and (max-width: 414px) {
+	@media screen and (max-width: 1024px) {
 		nav {
 			display: none;
 		}

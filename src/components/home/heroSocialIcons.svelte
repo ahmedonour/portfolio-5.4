@@ -37,7 +37,7 @@
 		transition: all 550ms ease-in-out;
 		color: var(--clr-Dark-Purple);
 	}
-	@media screen and (max-width: 414px) {
+	@media screen and (max-width: 1024px) {
 		.socialIcons {
 			flex-direction: row;
 			display: none;

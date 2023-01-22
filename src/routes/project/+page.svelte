@@ -1,31 +1,23 @@
 <script>
-	import { onMount } from 'svelte';
-	import ProjectCard from '../../components/projects/projectCard.svelte';
+	import { fly } from 'svelte/transition';
 	import ProjectLink from '../../components/projects/projectLink.svelte';
-	// onMount(() => {
-	// 	const cursor = document.querySelector('.cursor');
-	// 	document.addEventListener('mousemove', (e) => {
-	// 		cursor.style.left = e.pageX + 'px';
-	// 		cursor.style.top = e.pageY + 'px';
-	// 	});
-	// });
 </script>
 
-<main>
+<main in:fly={{ y: 200, duration: 2000 }}>
 	<h1>Selected Projects</h1>
 	<div class="SelectedProjects">
 		<div class="project-1">
-			<ProjectLink link='/project/authorLanding/' Imgsrc="/mouckup/Book.png" />
+			<ProjectLink link="/project/authorLanding/" Imgsrc="/mouckup/Book.png" />
 			<!-- <div class="cursor"><p>See More</p></div> -->
 		</div>
 		<div class="project-2">
-			<ProjectLink link='/project/Roshan/' Imgsrc="/mouckup/roshan.png" />
+			<ProjectLink link="/project/Roshan/" Imgsrc="/mouckup/roshan.png" />
 		</div>
 		<div class="project-3">
-			<ProjectLink link='/project/MAM/' Imgsrc="/mouckup/m.a.m.png" />
+			<ProjectLink link="/project/MAM/" Imgsrc="/mouckup/m.a.m.png" />
 		</div>
 		<div class="project-4">
-			<ProjectLink link='/project/Product card/' Imgsrc="/mouckup/procduct.png" />
+			<ProjectLink link="/project/Product card/" Imgsrc="/mouckup/procduct.png" />
 		</div>
 	</div>
 	<div class="otherProjects">
@@ -135,7 +127,7 @@
 		font-size: 8vw;
 		font-weight: 900;
 	}
-	@media screen and (max-width: 415px) {
+	@media screen and (max-width: 1024px) {
 		main {
 			flex-direction: column;
 			padding: 0 1rem;

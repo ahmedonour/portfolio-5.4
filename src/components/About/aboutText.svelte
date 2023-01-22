@@ -30,12 +30,12 @@
 		text-align: left;
 		line-height: 1.5;
 	}
-	@media screen and (max-width: 414px) {
+	@media screen and (max-width: 1024px) {
 		.aboutTesxt {
 			width: 85vw;
 		}
 		p {
-			font-weight: 300;
+			font-weight: 100;
 			text-align: justify;
 		}
 	}

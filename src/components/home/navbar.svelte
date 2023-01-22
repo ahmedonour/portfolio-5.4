@@ -208,7 +208,7 @@
 	ol .en-ar a .fa-moon {
 		font-size: 2rem;
 	}
-	@media screen and (max-width: 414px) {
+	@media screen and (max-width: 1024px) {
 		nav {
 			display: flex;
 			padding: 0 1rem;

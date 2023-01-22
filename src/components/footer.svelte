@@ -15,7 +15,7 @@
 		font-size: 0.5rem;
 		display: flex;
 		justify-content: center;
-		align-items: flex-end;
+		align-items: center;
 	}
 	footer h1 {
 		font-weight: 400;
