@@ -168,7 +168,6 @@
 <Footer />
 
 <style>
-
 	.loader {
 		position: fixed;
 		top: 0;

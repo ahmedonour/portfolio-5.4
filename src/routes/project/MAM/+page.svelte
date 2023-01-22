@@ -1,30 +1,40 @@
 <script>
 	import Backbutton from '../../../components/projects/backbutton.svelte';
 	import ImageSlider from '../../../components/projects/ImageSlider.svelte';
-	import ProjectCard from '../../../components/projects/projectCard.svelte';
+	import ProjectDetails from '../../../components/projects/projectDetails.svelte';
+	import TechLable from '../../../components/projects/techLable.svelte';
 	const active = 'mouckup';
 </script>
-
+<svelte:head>
+	<link rel="stylesheet" href="/projects.css">
+</svelte:head>
 <Backbutton />
 <main>
 	<div class="image-container">
 		<ImageSlider class={active} ShowcaseImage="/fg/Main-Page.png" />
 		<ImageSlider ShowcaseImage="/fg/About-me.png" />
+		
+	</div>
+	<div>
+		<ProjectDetails titleProject="Portfolio" description="Lorem" />
+	</div>
+	<div class="tech">
+		<TechLable techName="svelteKit" colour="background: #ff5e14; color: #fff;" />
+		<TechLable techName="figma" colour="background: #7dc2ff; color: #fff;" />
+		<TechLable techName="figma" colour="background: #5200ff; color: #fff;" />
 	</div>
 
-	<ProjectCard />
 </main>
-
-<!-- <ProjectCard
-	projectImg="/mouckup/m.a.m.png"
-	srcPath="/mouckup/m.a.m.png"
-	projectName="M.A.M"
-	projectDes="The M.A.M mobile app is an invaluable tool for keeping track of debts owed to you. It is a reliable and efficient way to ensure that you are always aware of who owes you and how much. The app is user-friendly and provides an easy-to-use interface that allows you to quickly and accurately track all debts. I highly recommend this app to anyone who needs to keep track of their debts. It is an excellent resource that will help you stay organized and informed."
-/> -->
 <style>
-	main {
+	/* main {
 		display: grid;
 		place-items: center;
+	}
+	.tech {
+		width: 70%;
+		display: flex;
+
+		margin-bottom: 2rem;
 	}
 	.image-container {
 		display: flex;
@@ -32,5 +42,5 @@
 		overflow: hidden;
 		width: 100vw;
 		height: 120%;
-	}
+	} */
 </style>
