@@ -12,7 +12,7 @@
 		text-transform: uppercase;
 		font-weight: 800;
 		border-radius: 10px;
-		margin-top: .5rem;
+		margin-top: 0.5rem;
 		margin-right: 1rem;
 		font-family: 'Montserrat';
 		padding: 0.5rem;

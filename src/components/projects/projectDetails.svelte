@@ -1,5 +1,4 @@
 <script>
-
 	export let titleProject;
 	export let description;
 </script>
@@ -24,16 +23,16 @@
 		padding: 1rem 0;
 		text-decoration: underline;
 	}
-	div p{
+	div p {
 		width: 50%;
 		text-align: justify;
 		font-weight: 400;
 	}
-	@media (max-width: 1024px){
-		div{
+	@media (max-width: 1024px) {
+		div {
 			width: 90vw;
 		}
-		div p{
+		div p {
 			width: 100%;
 			text-align: justify;
 			line-height: 1.4;

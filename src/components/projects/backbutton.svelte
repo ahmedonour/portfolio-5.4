@@ -1,4 +1,4 @@
-<a href="/project" class="backButton"><i class="fas fa-arrow-circle-left"></i></a>
+<a href="/project" class="backButton"><i class="fas fa-arrow-circle-left" /></a>
 
 <style>
 	.backButton {
@@ -10,7 +10,7 @@
 		top: 0px;
 		transition: all 500ms ease-in-out;
 	}
-	.backButton:hover{
+	.backButton:hover {
 		color: black;
 	}
 	@media screen and (max-width: 768px) {

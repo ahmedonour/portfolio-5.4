@@ -5,15 +5,15 @@
 	import TechLable from '../../../components/projects/techLable.svelte';
 	const active = 'mouckup';
 </script>
+
 <svelte:head>
-	<link rel="stylesheet" href="/projects.css">
+	<link rel="stylesheet" href="/projects.css" />
 </svelte:head>
 <Backbutton />
 <main>
 	<div class="image-container">
 		<ImageSlider class={active} ShowcaseImage="/fg/Main-Page.png" />
 		<ImageSlider ShowcaseImage="/fg/About-me.png" />
-		
 	</div>
 	<div>
 		<ProjectDetails titleProject="Portfolio" description="Lorem" />
@@ -23,8 +23,8 @@
 		<TechLable techName="figma" colour="background: #7dc2ff; color: #fff;" />
 		<TechLable techName="figma" colour="background: #5200ff; color: #fff;" />
 	</div>
-
 </main>
+
 <style>
 	/* main {
 		display: grid;
